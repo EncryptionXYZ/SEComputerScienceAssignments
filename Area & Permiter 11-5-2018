@@ -1,0 +1,26 @@
+// Developer: Mohamed Ali 9-25-2018
+// Main Concept: Area & Perimeter
+#include <iostream>
+#include <string>
+
+int main()
+{
+    int side1, side2, side3, side4;
+    int area, perimeter;
+    // Inputs and Outputs
+    std::cout<<"Enter the value for side 1: ";
+    std::cin>>side1;
+    std::cout<<"Enter the value for side 2: ";
+    std::cin>>side2;
+    std::cout<<"Enter the value for side 3: ";
+    std::cin>>side3;
+    std::cout<<"Enter the value for side 4: ";
+    std::cin>>side4;
+    // Calculations
+    area = side1 * side2;
+    perimeter = side1 + side2 + side3 + side4;
+    // Outputing Information
+    std::cout<<"A rectangle with the length of "<< side1 << " and the width of "<< side2 << " has an area equal to: " << area << std::endl;
+    std::cout<<"A rectangle with a side of "<< side1 << " and another side of "<< side2 << " and another side of " << side3 << " and another side of " << side4 << " has a perimeter equal to: " << perimeter;;    
+
+}
