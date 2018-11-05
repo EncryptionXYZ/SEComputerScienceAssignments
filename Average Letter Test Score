@@ -1,0 +1,64 @@
+// Time to code bois
+// Developer: Mohamed Ali
+// Project Average Test Scores
+#include <iostream>
+#include <string>
+
+int main()
+{
+
+    // Declaring Variables
+    double grade1;
+    double grade2;
+    double grade3;
+    double grade4;
+    double grade5;
+    double average;
+    char letterAverage;
+    //
+    
+    std::cout<<"What grade did you get for test 1: ";
+    std::cin>>grade1;
+    std::cout<<"What grade did you get for test 2: ";
+    std::cin>>grade2;
+    std::cout<<"What grade did you get for test 3: ";
+    std::cin>>grade3;
+    std::cout<<"What grade did you get for test 4: ";
+    std::cin>>grade4;
+    std::cout<<"What grade did you get for test 5: ";
+    std::cin>>grade5;
+    
+    //
+
+    average = (grade1 + grade2 + grade3 + grade4 + grade5) / 5;
+    
+    //
+    
+    if (average >= 89.5)
+    {
+        letterAverage = 'A';
+    }
+    
+    else if (average >= 79.5 && average < 89.5)
+    {
+        letterAverage = 'B';
+    } 
+    
+    else if (average >= 69.5 && average < 79.5)
+    {
+        letterAverage = 'C';
+    }
+
+    else if (average >= 64.5 && average <= 69.4)
+    {
+        letterAverage = 'D';
+    }
+    
+    else if (average < 64.5)
+    {
+      letterAverage = 'F';  
+    };
+    //
+    std::cout<< "Your average is " << letterAverage;
+    
+}
