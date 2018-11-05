@@ -1,0 +1,144 @@
+// Example program
+#include <iostream>
+#include <string>
+
+int main()
+{
+
+    int i;
+    int x;
+    int a;
+    int b;
+    int c;
+    int d;
+    int e;
+    int f;
+    int g;
+    int bnum;
+    int eenum;
+    int sum1;
+    //
+    //
+    //
+    //
+    //
+    i = 1;
+    do
+    {
+        std::cout << i << "  ";
+        i++;
+    }while(i<=10);
+    
+    
+    //
+    std::cout << std::endl;
+    //
+    
+    x = -10;
+    do
+    {
+        std::cout << x << "  ";
+        x++;
+    }while (x<=10);
+    
+    
+    //
+    std::cout << std::endl;
+    //
+    
+    a = 100;
+    do
+    {
+        std::cout << a << "  ";
+        a = a + 100;
+    }while (a<=1000);
+    //
+    std::cout << std::endl;
+    //
+    b = 1;
+    do
+    {
+        
+        std::cout << b << "  ";
+        b = b+2;
+        
+    }while (b<=100);
+    
+    
+    
+    //
+    std::cout << std::endl;
+    std::cout << std::endl;
+    std::cout << std::endl;
+    //
+    
+    
+    
+    c = 1;
+    do
+    {
+        std::cout << "5 * " << c << " = " << 5*c << std::endl;
+        c++;
+    }while(c<=8);
+    
+    
+    
+    //
+    //
+    //
+    
+    
+    
+
+    int sum;
+    d = 25;
+    do
+    {
+        e = e + d;
+        d=d+1;
+    }while (d<=125);
+    std::cout << "The sum of 25 to 125 is " << e;
+    std::cout << "\n";
+
+    
+    
+    //
+    std::cout << std::endl;
+    std::cout << std::endl;
+    std::cout << std::endl;
+    //
+    
+    
+    
+    f = -5;
+    do
+    {
+        g = g + f;
+        f=f+1;
+    }while (f<=10);
+    std::cout << "The sum of -5 to 10 is " << g;
+    std::cout << "\n";
+    
+    
+    //
+    std::cout << std::endl;
+    std::cout << std::endl;
+    std::cout << std::endl;
+    //
+    
+    
+    
+    std::cout << "Enter the beginning number: ";
+    std::cin>>bnum;
+    std::cout << "Enter the ending number: ";
+    std::cin>>eenum;
+    
+    e = bnum;
+    do
+    {
+        std::cout << e << " ";
+        e=e+1;
+ 
+    }while (e<=eenum);
+    
+}
