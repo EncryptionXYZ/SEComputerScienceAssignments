@@ -1,0 +1,22 @@
+// Mohamed ALi
+// 
+#include <iostream>
+
+
+int main()
+{
+     // Declaring Variables
+    int grade1, grade2,  grade3;
+    int totalGradesEntered = 3;
+    
+    //
+    std::cout << "Enter the first test grade: ";
+    std::cin >> grade1;
+    std::cout << "Enter the second test grade: ";
+    std::cin >> grade2;
+    std::cout << "Enter the third test grade: ";
+    std::cin >> grade3;
+    // Calculations
+
+    std::cout << "The average of " << grade1 << " and " << grade2 << " and " << grade3 << " is: " <<(grade1 + grade2 + grade3) / totalGradesEntered;
+}
