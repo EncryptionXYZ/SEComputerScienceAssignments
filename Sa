@@ -1,0 +1,15 @@
+// Mohamed Ali
+// Assignment #1 | A Simple Mailing Label
+// 9-14-18
+
+#include <iostream>
+
+
+int main()
+{
+    
+    std::cout<<"Mr.Luke Sokay\n";
+    std::cout<<"4 ApplePie Road\n";
+    std::cout<<"Applesville, NY 11742"; 
+
+}
