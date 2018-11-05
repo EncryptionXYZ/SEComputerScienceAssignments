@@ -1,0 +1,23 @@
+// Mohamed Ali
+// Math Practice handout number 10, 9-17-2018
+#include <iostream>
+#include <string>
+#include <cmath>
+
+int main()
+{
+    std::cout << "16-4 * 2 = " << 16-4*2 << std::endl;
+    std::cout << "8^3= " << pow(8,3) << std::endl;
+    std::cout << "15/4= " << 15/4 << std::endl;
+    std::cout << "(000.2)(.0003) = " << (000.2) * (.0003) << std::endl;
+    std::cout << "3*4/3-3= " << 3*4/3-3 << std::endl;
+    std::cout << "42.4 - 2 = " << 42.4-2 << std::endl;   
+    std::cout << "10,000 * 40 = " << 10000 * 40 << std::endl;
+    std::cout << "(18 + 2 * 2) / (2+1) = " << (18 + 2 * 2) / (2+1) << std::endl;
+    std::cout << "(1/4) / (3/5) = " << (1/4) / (3/5) << std::endl;
+    std::cout << "(12 + 3) / (3*2) = " << (12+3)/(3*2) << std::endl;    
+    std::cout << "100000 * 40000 = " << 100000 * 40000 << std::endl;       
+    
+    
+    
+}
