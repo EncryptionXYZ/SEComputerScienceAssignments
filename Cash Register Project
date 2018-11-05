@@ -1,0 +1,49 @@
+// Mohamed Ali
+// The Cash Register Project
+// 10/12/2018 Dying in CS Class, the speed is slow af
+#include <iostream>
+#include <string>
+
+int main()
+{
+
+    double amountofP;
+    double percentofD;
+    double amountAfterD;
+    double amountAfterDnT1;
+    double finalPrice;
+    double standardTax = 0.085;
+    double amountPaid;
+    double discount1;
+    //
+    std::cout << "Please enter the amount of the item you wish to purchase: $";
+    std::cin >> amountofP;
+    std::cout << "Do me a favor, please enter the discount percent: %";
+    std::cin >> percentofD;
+
+    percentofD = percentofD / 100;
+    amountAfterD = amountofP - (percentofD * amountofP);
+    amountAfterDnT1 = amountAfterD * standardTax;
+    finalPrice = amountAfterD + amountAfterDnT1;
+    std::cout << "Total due is " << finalPrice << std::endl;
+    std::cout << "How much do you wish to pay today: $";
+    std::cin >> amountPaid;    
+    
+    if (amountPaid < finalPrice)
+    {
+        std::cout << "Sorry, purchase denied. Reason: Insufficient Funds.";
+    }
+    
+    else
+    {
+        std::cout << "Item Cost:                  $" << amountofP << std::endl;
+        std::cout << "Discount of " << percentofD * 100 << "% :           $" << amountofP - amountAfterD << std::endl;
+        std::cout << "Discounted Price:           $" << amountAfterD << std::endl;
+        std::cout << "Tax:                        $" << amountAfterDnT1 << std::endl;
+        std::cout << "Total Due:                  $" << finalPrice << std::endl;
+        std::cout <<"Amount Paid:                $" << amountPaid << std::endl;
+        std::cout << "Your change is:             $" << amountPaid - finalPrice;
+    }
+    
+}
+
