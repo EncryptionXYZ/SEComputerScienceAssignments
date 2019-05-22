@@ -19,13 +19,13 @@ public class FinalProject extends JFrame {
    private DrawCanvas canvas;  // the drawing canvas (an inner class extends JPanel)
  
    // Attributes of moving object
-   private int x = 30, y = 100;  // top-left (x, y)
-   private int size = 40;        // width and height
-   private int xSpeed = 1, ySpeed = 1; // displacement per step in x, y
+   private int x = 0, y = 100;  // top-left (x, y)
+   private int xSpeed = 0, ySpeed = 10; // displacement per step in x, y
    
    // Second Moving Object
    private int x2 = 60, y2 = 200;
-   private int size2 = 50;
+   private int sizex1 = 50;
+   private int sizey1 = 50;
    private int x2Speed = 2, y2Speed = 2;
    // Constructor to setup the GUI components and event handlers
    public FinalProject() {
@@ -52,7 +52,16 @@ public class FinalProject extends JFrame {
    // Update the (x, y) position of the moving object
    public void update() {
      
-
+		//all i want to do rihght now in update the dudes position up and down, not left and right do you understand ocmputer
+      x += xSpeed;
+      y += ySpeed;
+      if (x > CANVAS_WIDTH - sizex1 || x < 0) {
+         xSpeed = -xSpeed;
+      }
+      if (y > CANVAS_HEIGHT - sizey1 || y < 0) {
+         ySpeed = -ySpeed;
+		}
+		//if()	
    }
  
  
@@ -85,7 +94,7 @@ e.printStackTrace();
 }
          super.paintComponent(g);  // paint parent's background
          g.drawImage(dbImage, 0, 0, getWidth(), getHeight(), this);
-         g.drawImage(dbImage1, 0, 100, getWidth()-575, getHeight()-420, this);
+         g.drawImage(dbImage1, x, y, sizex1, sizey1, this);
          g.drawImage(dbImage2, 250, 0, getWidth()-550, getHeight()-350, this);
 
            
